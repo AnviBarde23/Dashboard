@@ -11,7 +11,7 @@ st.set_page_config(page_title="Car Insurance Analysis Dasboard", layout="wide")
 st.title("Car Insurance Analysis Dasboard")
 
 #Load data
-df = pd.read_csv(r"C:\Users\barde\OneDrive\Desktop\practice\carInsurance_data.csv")
+df = pd.read_csv("carInsurance_data.csv")
 
 def init_filter_state(df):
     if "marital" not in st.session_state:
